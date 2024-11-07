@@ -38,7 +38,7 @@ path_mwakaboko2 <- "/Users/masinde/surfdrive/510/housing vulnerability (Echo IV)
 hse_svy <- read.csv(path_mwakaboko2, header = T, sep = ";", dec = ",")
 
 # tif file
-path_uav_mwakaboko <- "/Users/masinde/surfdrive/510/xter-HV/uav/mwakaboko1_clipped2.tif"
+path_uav_mwakaboko <- "data/mwakaboko1_clipped2.tif"
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
