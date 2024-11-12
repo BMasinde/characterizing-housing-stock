@@ -33,15 +33,19 @@ ui <- fluidPage(
 )
 
 # path list for building materials
-path_list_bm_points <- list("data/mwakaboko_bm_clipped_6.geojson") 
+#path_list_bm_points <- list("data/mwakaboko_bm_clipped_6.geojson",
+#                            "mwakaboko_bm_clipped_5.geojson") 
+
+path_list_bm_points <- list("data/combined_geojson_file.geojson")
 
 #hse_svy <- read.csv(path_mwakaboko2, header = T, sep = ";", dec = ",")
 
 # List of input file paths for UAV images
-path_list <- list("data/mwakaboko1_clipped2.tif", "data/mwakaboko1_clipped3.tif",
+path_list <- list("data/mwakaboko1_clipped2.tif",
                   "data/mwakaboko1_clipped4.tif", 
                   "data/mwakaboko1_clipped5.tif",
-                  "data/mwakaboko1_clipped6.tif")
+                  "data/mwakaboko1_clipped6.tif",
+                  "data/mwakaboko1_clipped7.tif")
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
